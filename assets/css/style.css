@@ -7,17 +7,30 @@
   border:0px;
 }
 /* ==> hi!! */
-#body {
-  display:flexbox;
+body {
+  background-color: var(--almost-black);
+} 
+
+#viewport {
+  overflow: hidden;
+  display: flexbox;
   justify-content: center;
-  background-color: var(--background);
-  width: 100vw;
-  height: 100vh;
+  background-color: var(--darkblue);
+  width: 90vw;
+  height: 90vh;
   margin: 0px;
-  padding-top: 10vh;
+  margin-top: 5vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom:5vh;
+  border-width: 3px;
+  border-color: var(--purple);
+  border-style: solid;
 }
 
 #links{
   display: box;
-  text-align: left;
+  align-content: center;
+  flex-direction: column;
 }
+
