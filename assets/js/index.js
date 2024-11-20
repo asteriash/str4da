@@ -4,5 +4,5 @@ function discord(){
     console.log("You've copied to cliboard!");
   }).catch(e => {
     console.error("Failed to copy text!", e);
-  })
+  });
 }
