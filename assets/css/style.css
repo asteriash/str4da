@@ -34,3 +34,6 @@ body {
   flex-direction: column;
 }
 
+.link{
+  display: box;
+}
