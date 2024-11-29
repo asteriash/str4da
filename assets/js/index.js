@@ -9,9 +9,9 @@ const fetchSocials = (platform) => {
     .then(parseSocials => parseSocials.json()) //parsing
     .then(data => {
       console.log(`Trying to copy ${data[platform]} into the clipboard;\ncaller: ${platform}.`);
-      return data[platform];
       fetchedData = data;
       hasFetched = true;
+      return data[platform];
     })
     .catch(err => console.error(`Error:\n${err}\nCaller:${platform}`))
   }
