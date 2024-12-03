@@ -7,7 +7,7 @@
   border:0px;
   font-size: 22px;
 }
-/* ==> hi!! */
+
 body {
   background-color: var(--almost-black);
 } 
@@ -29,12 +29,26 @@ body {
   border-style: solid;
 }
 
+/* .discord { */
+  /* color: var(--blue); */
+  /* border-width: 1px; */
+  /* border-color: var(--darkblue); */
+/* } */
+
 #links{
-  display: box;
+  width: 90vw;
+  height: 90vh;
+  overflow: hidden;
+  z-index: 2;
+  text-align: center;
+  display: flex;
   align-content: center;
+  justify-content: center;
   flex-direction: column;
+  border: 0px;
 }
 
 .link{
   display: box;
+  /* margin: auto; */
 }
