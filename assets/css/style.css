@@ -7,12 +7,12 @@
   border:0px;
   font-size: 22px;
 }
-/* ==> hi!! */
-body {
+
+body{
   background-color: var(--almost-black);
 } 
 
-#viewport {
+#viewport{
   overflow: hidden;
   display: flexbox;
   justify-content: center;
@@ -31,11 +31,12 @@ body {
 }
 
 #links{
-  display: box;
+  display: flex;
   align-content: center;
+  justify-content: center;
   flex-direction: column;
   padding: 20px;
-  border-style
+  width: 200px;
 }
 
 .subscript {
