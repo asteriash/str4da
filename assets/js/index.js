@@ -5,7 +5,7 @@ let hasFetched = false; // check flag
 
 const writeToClipboard = (response) => {
   console.log(`Trying to write ${response} into the clipboard.`);
-  navigator.clipboard.writeText(response);
+  navigator.clipboard.writeText(response); // Writing to clipboard
 };
 
 const fetchSocials = (platform) => {
@@ -14,7 +14,7 @@ const fetchSocials = (platform) => {
     .then(parseSocials => parseSocials.json()) //parsing
     .then(data => {
       console.log(`Trying to copy ${data[platform]} into the clipboard;\ncaller: ${platform}.`);
-     fetchedData = data;
+     fetchedData = data; //If we're fetching new stuff, put it into fetchedData
       hasFetched = true;
       writeToClipboard(data[platform]);
     })
@@ -22,7 +22,6 @@ const fetchSocials = (platform) => {
   }
   else if (hasFetched == true){
     writeToClipboard(fetchedData[platform]);
+    console.log(`Cached: ${fetchedData}\nTrying to copy:${fetchedData[platform]}`);
   }
 };
-
-

@@ -27,14 +27,21 @@ body {
   border-width: 3px;
   border-color: var(--purple);
   border-style: solid;
+  padding: 20px;
 }
 
 #links{
   display: box;
   align-content: center;
   flex-direction: column;
+  padding: 20px;
+  border-style
+}
+
+.subscript {
+  color:var(--gray);
 }
 
 .link{
-  display: box;
+  display: box; 
 }
